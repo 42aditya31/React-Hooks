@@ -8,7 +8,7 @@ function App() {
 
   const handleTask = () => {
     const newTask = "Go for a walk";
-    setTasks([...task, newTask]);
+    setTask([...task, newTask]);
   }
 
   const changeName = () => {
@@ -26,11 +26,11 @@ function App() {
 <div>
       <h3>Tasks:</h3>
       <ul>
-        {tasks.map((task, index) => (
+        {task.map((task, index) => (
           <li key={index}>{task}</li>
         ))}
       </ul>
-      <button onClick={addTask}>Add Task</button>
+      <button onClick={handleTask}>Add Task</button>
     </div>
 
 {/* // Now when we want to update the object  */}
