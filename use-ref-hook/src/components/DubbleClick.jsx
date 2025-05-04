@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-function SubmitForm() {
+function DubbleClick() {
   const isSubmitting = useRef(false); // Keeps track of ongoing submission
 
   const handleSubmit = async () => {
@@ -25,3 +25,6 @@ function SubmitForm() {
     </div>
   );
 }
+
+
+export default DubbleClick;

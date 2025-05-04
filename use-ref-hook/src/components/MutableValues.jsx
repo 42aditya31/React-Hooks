@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-function Timer() {
+function MutableValues() {
   const [seconds, setSeconds] = useState(0);
   const timerRef = useRef(null);
 
@@ -22,3 +22,5 @@ function Timer() {
     </div>
   );
 }
+
+export default MutableValues;
